@@ -1,3 +1,6 @@
+# takes a dataframe that has spaces in the column names and changes those column names to snake_case
+
+
 snakecasr <- function(df){
   dfcols <- colnames(df)
   vector <- str_replace_all(colnames(df)[1]," ","_")
